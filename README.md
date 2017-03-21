@@ -1,11 +1,8 @@
-README: Project 2
+README:HTTP Web Server
 MPCS 54001
 Mark McDonald
 
-This webserver Java program is working as intended, and described by the Project 2 prompt.
-These programs have been tested on the UofC Linux machine provided. Additionally, I used curl and Postman to review and verify that the HTTP responses were responding correctly.
-
-This document provides some instructions on how to run the WebServer program. I believe that the java code is sufficiently commented. Please refer to the code’s comments for details about how the program works.
+This document provides some instructions on how to run the WebServer program. This was written as a project for the University of Chicago's course MPCS 54001.' I believe that the java code is sufficiently commented. Please refer to the code’s comments for details about how the program works. Additionally, I used curl and Postman to review and verify that the HTTP responses are responding correctly.
 
 Instructions
 To test these programs do the following:
