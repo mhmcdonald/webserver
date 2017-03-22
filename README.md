@@ -1,6 +1,5 @@
-# HTTP Web Server
-## MPCS 54001
-## Mark McDonald
+## HTTP Web Server
+### MPCS 54001, Mark McDonald
 
 This document provides some instructions on how to run the WebServer program. This simple web server supports get and head requests. It accepts one command-line flag (--serverPort), indicating the TCP port to bind.
 
