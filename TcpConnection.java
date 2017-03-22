@@ -39,7 +39,6 @@ class TcpConnection extends Thread {
                 }
             }
 
-            //System.out.println(requestString);  //display the request in the console
 
             if (!httpProtocol){ //if we received something other than a valid HTTP request, we attempt to publish a 500 status response
                 InvalidHttpResponse invalidRes = new InvalidHttpResponse("501 Not Implemented", "text/html");
@@ -53,7 +52,6 @@ class TcpConnection extends Thread {
                     } catch (SocketException se) {
                         printWriter.write(invalidRes.negResponse.toCharArray());
                     }
-                    //System.out.println(invalidRes.negResponse);
                 } else {
                     if (req.redirect) {
                         RedirectResponse redRes = new RedirectResponse(req, req.mimeType);
@@ -62,7 +60,6 @@ class TcpConnection extends Thread {
                         } catch (SocketException se) {
                             printWriter.write(redRes.response.toCharArray());
                         }
-                        //System.out.println(redRes.response);
                     } else {
                         HttpResponse res = new HttpResponse(req, req.mimeType);
                         try {
@@ -70,7 +67,6 @@ class TcpConnection extends Thread {
                         } catch (SocketException se) {
                             printWriter.write(res.response.toCharArray());
                         }
-                        //System.out.println(res.response);
                     }
                 }
             }

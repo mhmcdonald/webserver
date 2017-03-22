@@ -1,8 +1,10 @@
-README:HTTP Web Server
-MPCS 54001
-Mark McDonald
+#HTTP Web Server#
+##MPCS 54001##
+##Mark McDonald##
 
-This document provides some instructions on how to run the WebServer program. This was written as a project for the University of Chicago's course MPCS 54001.' I believe that the java code is sufficiently commented. Please refer to the code’s comments for details about how the program works. Additionally, I used curl and Postman to review and verify that the HTTP responses are responding correctly.
+This document provides some instructions on how to run the WebServer program. This simple web server supports get and head requests. It accepts one command-line flag (--serverPort), indicating the TCP port to bind.
+
+Please refer to the code’s comments for details about how the program works. I used curl and Postman to review and verify that the HTTP responses are responding correctly.
 
 Instructions
 To test these programs do the following:
@@ -11,12 +13,12 @@ This webserver has been written in 6 Java classes. All 6 of these Java classes m
 
 Place the 6 .java files in a directory on your machine. CD into that directory. In terminal, run the following commands:
 
-javac WebServer.java
-javac HttpRequest.java
-javac TcpConnection.java
-javac HttpResponse.java
-javac InvalidHttpResponse.java
-javac RedirectResponse.java
+- javac WebServer.java
+- javac HttpRequest.java
+- javac TcpConnection.java
+- javac HttpResponse.java
+- javac InvalidHttpResponse.java
+- javac RedirectResponse.java
 
 You will also want to place some .html, .jpeg, .png, .pdf files in a root directory that has been placed inside the same directory as these java files. This root directory must be named “www”.
 
